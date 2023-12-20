@@ -1,0 +1,43 @@
+"C:\Program Files\JetBrains\CLion 2023.2.2\bin\cmake\win\x64\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/mingw64/bin/mingw32-make.exe -DCMAKE_C_COMPILER=C:/mingw64/bin/gcc.exe -DCMAKE_CXX_COMPILER=C:/mingw64/bin/cpp.exe -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Heros\CLionProjects\Reinas -B C:\Users\Heros\CLionProjects\Reinas\cmake-build-debug
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is unknown
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/mingw64/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - failed
+-- Check for working CXX compiler: C:/mingw64/bin/cpp.exe
+-- Check for working CXX compiler: C:/mingw64/bin/cpp.exe - broken
+CMake Error at C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:60 (message):
+  The C++ compiler
+
+    "C:/mingw64/bin/cpp.exe"
+
+  is not able to compile a simple test program.
+
+  It fails with the following output:
+
+    Change Dir: C:/Users/Heros/CLionProjects/Reinas/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xip7hy
+    
+    Run Build Command(s):C:/Program Files/JetBrains/CLion 2023.2.2/bin/cmake/win/x64/bin/cmake.exe -E env VERBOSE=1 C:/mingw64/bin/mingw32-make.exe -f Makefile cmTC_f725c/fast && C:/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_f725c.dir\build.make CMakeFiles/cmTC_f725c.dir/build
+    mingw32-make.exe[1]: Entering directory 'C:/Users/Heros/CLionProjects/Reinas/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xip7hy'
+    Building CXX object CMakeFiles/cmTC_f725c.dir/testCXXCompiler.cxx.obj
+    C:\mingw64\bin\cpp.exe    -o CMakeFiles\cmTC_f725c.dir\testCXXCompiler.cxx.obj -c C:\Users\Heros\CLionProjects\Reinas\cmake-build-debug\CMakeFiles\CMakeScratch\TryCompile-xip7hy\testCXXCompiler.cxx
+    cpp.exe: fatal error: '-c' is not a valid option to the preprocessor
+    compilation terminated.
+    mingw32-make.exe[1]: *** [CMakeFiles\cmTC_f725c.dir\build.make:77: CMakeFiles/cmTC_f725c.dir/testCXXCompiler.cxx.obj] Error 1
+    mingw32-make.exe[1]: Leaving directory 'C:/Users/Heros/CLionProjects/Reinas/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-xip7hy'
+    mingw32-make.exe: *** [Makefile:126: cmTC_f725c/fast] Error 2
+    
+    
+
+  
+
+  CMake will not be able to correctly generate this project.
+Call Stack (most recent call first):
+  CMakeLists.txt:2 (project)
+
+
+-- Configuring incomplete, errors occurred!
